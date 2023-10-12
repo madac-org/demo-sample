@@ -139,6 +139,12 @@ const textStyle3DarkGrey = TextStyle(
   fontWeight: FontWeight.w700,
   color: darkGreyColor
 );
+const textStyle4DarkGrey = TextStyle(
+  fontFamily: 'Lato',  
+  fontSize: 14,
+  fontWeight: FontWeight.w700,
+  color: greyColor
+);
 
 const buttonTextDarkBgStyle = TextStyle(
   fontFamily: 'Lato-Regular',
