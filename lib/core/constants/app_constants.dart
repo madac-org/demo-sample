@@ -3,37 +3,32 @@ import 'package:flutter/material.dart';
 
 // input decoration starts
 
-InputDecoration customInputDecoration(String label,{isConnected = true}){
+InputDecoration customInputDecoration(String label, {isConnected = true}) {
   return InputDecoration(
-    labelText: label,
-    labelStyle: inputLableStyle,
-    errorStyle: textStyle1Red,
-    border: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(10),
-    ),
-    focusedBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(10),
-      borderSide: BorderSide(color: secondaryColor.withOpacity(0.3))
-    ),
-    enabledBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(10),
-      borderSide: BorderSide(color: secondaryColor.withOpacity(0.3))
-    ),
-    disabledBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(10),
-      borderSide: BorderSide(color: secondaryColor.withOpacity(0.3))
-    ),
-    filled: true,
-    fillColor: (isConnected) ? whiteColor : greyColor
-  );
+      labelText: label,
+      labelStyle: inputLableStyle,
+      errorStyle: textStyle1Red,
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(10),
+      ),
+      focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(10),
+          borderSide: BorderSide(color: secondaryColor.withOpacity(0.3))),
+      enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(10),
+          borderSide: BorderSide(color: secondaryColor.withOpacity(0.3))),
+      disabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(10),
+          borderSide: BorderSide(color: secondaryColor.withOpacity(0.3))),
+      filled: true,
+      fillColor: (isConnected) ? whiteColor : greyColor);
 }
 
 // input decoration ends
 
-
 // Buttons Styles Starts
 
-ButtonStyle skipAndBackButtonStyleWhiteBg(){
+ButtonStyle skipAndBackButtonStyleWhiteBg() {
   return TextButton.styleFrom(
     backgroundColor: whiteColor,
     elevation: 0,
@@ -41,7 +36,7 @@ ButtonStyle skipAndBackButtonStyleWhiteBg(){
   );
 }
 
-ButtonStyle buttonStyleWhiteBg(){
+ButtonStyle buttonStyleWhiteBg() {
   return ElevatedButton.styleFrom(
     backgroundColor: whiteColor,
     elevation: 0.5,
@@ -54,15 +49,13 @@ ButtonStyle buttonStyleWhiteBg(){
   );
 }
 
-ButtonStyle buttonStyleDarkBg(){
+ButtonStyle buttonStyleDarkBg() {
   return ElevatedButton.styleFrom(
     elevation: 0.5,
     backgroundColor: secondaryColor,
     shadowColor: secondaryColor.withOpacity(0.25),
     minimumSize: const Size(double.infinity, 52), // full width and 50 height
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(10)
-    ),
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
   );
 }
 
@@ -71,101 +64,86 @@ ButtonStyle buttonStyleDarkBg(){
 // Text Styles Starts
 
 const headingStyle = TextStyle(
-  fontSize: 20,
-  fontFamily: 'Lato',
-  fontWeight: FontWeight.w700,
-  color: secondaryColor
-);
+    fontSize: 20,
+    fontFamily: 'Lato',
+    fontWeight: FontWeight.w700,
+    color: secondaryColor);
 
 TextStyle descriptionStyle = TextStyle(
-  fontSize: 16,
-  fontFamily: 'Lato',
-  fontWeight: FontWeight.w400,
-  color: secondaryColor.withOpacity(0.5)
-);
+    fontSize: 15,
+    fontFamily: 'Lato',
+    fontWeight: FontWeight.w400,
+    color: secondaryColor.withOpacity(0.5));
 
 const textStyle1DarkGrey = TextStyle(
-  fontSize: 16,
-  fontFamily: 'Lato',
-  fontWeight: FontWeight.w400,
-  color: darkGreyColor
-);
+    fontSize: 16,
+    fontFamily: 'Lato',
+    fontWeight: FontWeight.w400,
+    color: darkGreyColor);
 
 const textStyle1Black = TextStyle(
-  fontSize: 12,
-  fontFamily: 'Lato',
-  fontWeight: FontWeight.w700,
-  color: blackColor
-);
+    fontSize: 12,
+    fontFamily: 'Lato',
+    fontWeight: FontWeight.w700,
+    color: blackColor);
 
 const textStyle1Secondary = TextStyle(
-  fontSize: 16,
-  fontFamily: 'Lato',
-  fontWeight: FontWeight.w600,
-  color: primaryColor
-);
+    fontSize: 16,
+    fontFamily: 'Lato',
+    fontWeight: FontWeight.w600,
+    color: primaryColor);
 
 const textStyle1Red = TextStyle(
-  fontSize: 12,
-  fontFamily: 'Lato',
-  fontWeight: FontWeight.w700,
-  color: redColor
-);
+    fontSize: 12,
+    fontFamily: 'Lato',
+    fontWeight: FontWeight.w700,
+    color: redColor);
 
 const textStyle2Black = TextStyle(
-  fontFamily: 'Lato',  
-  fontSize: 18,
-  fontWeight: FontWeight.w700,
-  color: blackColor
-);
+    fontFamily: 'Lato',
+    fontSize: 18,
+    fontWeight: FontWeight.w700,
+    color: blackColor);
 
 const textStyle3Black = TextStyle(
-  fontFamily: 'Lato',  
-  fontSize: 14,
-  fontWeight: FontWeight.w700,
-  color: blackColor
-);
+    fontFamily: 'Lato',
+    fontSize: 14,
+    fontWeight: FontWeight.w700,
+    color: blackColor);
 
 const textStyle2DarkGrey = TextStyle(
-  fontFamily: 'Lato',  
-  fontSize: 18,
-  fontWeight: FontWeight.w700,
-  color: darkGreyColor
-);
+    fontFamily: 'Lato',
+    fontSize: 18,
+    fontWeight: FontWeight.w700,
+    color: darkGreyColor);
 
 const textStyle3DarkGrey = TextStyle(
-  fontFamily: 'Lato',  
-  fontSize: 14,
-  fontWeight: FontWeight.w700,
-  color: darkGreyColor
-);
+    fontFamily: 'Lato',
+    fontSize: 14,
+    fontWeight: FontWeight.w700,
+    color: darkGreyColor);
 
 const buttonTextDarkBgStyle = TextStyle(
-  fontFamily: 'Lato-Regular',
-  fontSize: 18,
-  fontWeight: FontWeight.w600,
-  color: whiteColor
-);
+    fontFamily: 'Lato-Regular',
+    fontSize: 18,
+    fontWeight: FontWeight.w600,
+    color: whiteColor);
 
 const buttonTextWhiteBgStyle = TextStyle(
-  fontFamily: 'Lato-Regular',
-  fontSize: 18,
-  fontWeight: FontWeight.w600,
-  color: secondaryColor
-);
+    fontFamily: 'Lato-Regular',
+    fontSize: 18,
+    fontWeight: FontWeight.w600,
+    color: secondaryColor);
 
 const backAndSkipButtonTextWhiteBgStyle = TextStyle(
-  fontFamily: 'Lato-Regular',
-  fontSize: 16,
-  fontWeight: FontWeight.w600,
-  color: secondaryColor
-);
-
+    fontFamily: 'Lato-Regular',
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+    color: secondaryColor);
 
 TextStyle inputLableStyle = TextStyle(
-  fontFamily: 'Lato',
-  fontSize: 16,
-  fontWeight: FontWeight.w300,
-  color: secondaryColor.withOpacity(0.3)
-);
+    fontFamily: 'Lato',
+    fontSize: 16,
+    fontWeight: FontWeight.w300,
+    color: secondaryColor.withOpacity(0.3));
 // Text Styles Ends

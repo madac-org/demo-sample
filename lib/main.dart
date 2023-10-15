@@ -4,7 +4,7 @@ import 'injection_container.dart' as dependency_injector;
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await dependency_injector.init();  
+  await dependency_injector.init();
   runApp(const MyApp());
 }
 
@@ -16,12 +16,10 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-
   @override
-  void initState(){
+  void initState() {
     super.initState();
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -33,8 +31,7 @@ class _MyAppState extends State<MyApp> {
         useMaterial3: true,
       ),
       routes: customRoutes,
-      initialRoute: '/',
+      initialRoute: 'successfull-screen',
     );
   }
-
 }
