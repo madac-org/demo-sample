@@ -8,14 +8,17 @@ import 'package:flutter/material.dart';
 import '../../features/authentication/presentation/pages/forget_password.dart';
 import '../../features/authentication/presentation/pages/login.dart';
 import '../../features/authentication/presentation/pages/register.dart';
+import '../widgets/logged_in_drawer_widget.dart';
 
 var customRoutes = <String, WidgetBuilder>{
   '/': (context) => const LaunchScreen(),
   'login': (context) => LoginScreen(),
   'register': (context) => RegisterScreen(),
   'forget-password': (context) => ForgetPasswordScreen(),
+  'loggedInCustomDrawer': (context) => LoggedInCustomDrawer(),
   'successfull-screen': (context) {
-    final Map<String, dynamic>? args = ModalRoute.of(context)?.settings.arguments as Map<String, dynamic>?;
+    final Map<String, dynamic>? args =
+        ModalRoute.of(context)?.settings.arguments as Map<String, dynamic>?;
     // Check if args is not null before using it
     if (args != null) {
       return SuccessfullScreen(
@@ -36,5 +39,5 @@ var customRoutes = <String, WidgetBuilder>{
   },
   'home': (context) => const HomeScreen(),
   'notifications': (context) => NotificationsScreen(),
-  'wallet-management' : (context) => const WalletScreen(),
+  'wallet-management': (context) => const WalletScreen(),
 };

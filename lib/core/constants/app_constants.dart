@@ -75,6 +75,12 @@ TextStyle descriptionStyle = TextStyle(
     fontWeight: FontWeight.w400,
     color: secondaryColor.withOpacity(0.5));
 
+const TextStyle iconText = TextStyle(
+    fontSize: 13,
+    fontFamily: 'Lato',
+    fontWeight: FontWeight.w400,
+    color: secondaryColor);
+
 const textStyle1DarkGrey = TextStyle(
     fontSize: 16,
     fontFamily: 'Lato',

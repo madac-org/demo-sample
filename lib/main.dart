@@ -31,7 +31,7 @@ class _MyAppState extends State<MyApp> {
         useMaterial3: true,
       ),
       routes: customRoutes,
-      initialRoute: 'successfull-screen',
+      initialRoute: 'loggedInCustomDrawer',
     );
   }
 }
