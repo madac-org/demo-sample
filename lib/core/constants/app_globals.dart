@@ -7,3 +7,4 @@ const darkGreyColor = Color.fromRGBO(155, 155, 155, 1);
 const primaryColor = Color.fromRGBO(29, 172, 232, 1);
 const secondaryColor = Color.fromRGBO(0, 27, 70, 1);
 const redColor = Color.fromRGBO(192, 57, 43, 1);
+const iconColor = Color.fromRGBO(179, 187, 199, 1);
